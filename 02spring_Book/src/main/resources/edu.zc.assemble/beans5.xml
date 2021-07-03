@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+               http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+<!--通过构造方式注入-->
+    <bean id="user1" class="edu.zc.assemble.User">
+        <constructor-arg index="0" value="tom"/>
+        <constructor-arg index="1" value="1234"/>
+        <constructor-arg index="2">
+                <list>
+                    <value>"constructor_list_value1"</value>
+                    <value>"constructor_list_value2"</value>
+                </list>
+        </constructor-arg>
+    </bean>
+<!--    通过设值方式注入-->
+    <bean id="user2" class="edu.zc.assemble.User">
+        <property name="username" value="张三"/>
+        <property name="password" value="123456"/>
+        <property name="list">
+            <list>
+                <value>"setListValue1"</value>
+                <value>"setListValue2"</value>
+            </list>
+        </property>
+    </bean>
+</beans>
