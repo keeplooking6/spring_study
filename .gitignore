@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .idea
 *.iml
 *.ipr
@@ -18,3 +17,5 @@ mvnw
 *.tar.gz
 *.rar
 
+
+target/*
