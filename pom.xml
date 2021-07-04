@@ -11,6 +11,7 @@
     <modules>
         <module>01springIOC</module>
         <module>02spring_Book</module>
+        <module>03spring_AOP</module>
     </modules>
 
     <properties>

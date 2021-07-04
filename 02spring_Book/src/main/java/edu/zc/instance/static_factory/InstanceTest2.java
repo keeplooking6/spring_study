@@ -9,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class InstanceTest2 {
     public static void main(String[] args) {
-        String xmlPath = "edu.zc/instance/Beans2.xml";
+        String xmlPath = "edu/zc/instance/Beans2.xml";
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
         System.out.println(applicationContext.getBean("bean2"));
     }

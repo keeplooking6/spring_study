@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class InstanceTest1 {
     public static void main(String[] args) {
 //       xml配置文件放到resources下
-        String xmlPath = "edu.zc/instance/Beans1.xml";
+        String xmlPath = "edu/zc/instance/Beans1.xml";
 //        从类路径寻找xml配置文件
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext(xmlPath);
 //        获取配置文件中的bean实例
